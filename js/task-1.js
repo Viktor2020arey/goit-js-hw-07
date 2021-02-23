@@ -1,13 +1,11 @@
 const elementChildrens = document.querySelector('#categories').children.length;
+console.log(`В списке ${elementChildrens} категории.`);
 
-console.log(`'В списке ${elementChildrens} категории.'`);
+const categoriesItem = document.querySelectorAll('.item');
 
-const categoriesItem = elementChildrens.child;
-console.log(categoriesItem);
-
-const textCategoriesItem = document.querySelector('h2').textContent;
-console.log(`Категория: ${textCategoriesItem}`);
-
-const elementCategoriesItem = document.querySelector('.item').lastElementChild
-  .children.length;
-console.log(`Количество элементов: ${elementCategoriesItem}`);
+for (let item of categoriesItem) {
+  console.log(`Категория: ${item.firstElementChild.textContent}`);
+  console.log(
+    `Количество элементов: ${item.firstElementChild.nextElementSibling.children.length}`,
+  );
+}
