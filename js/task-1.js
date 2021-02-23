@@ -5,7 +5,5 @@ const categoriesItem = document.querySelectorAll('.item');
 
 for (let item of categoriesItem) {
   console.log(`Категория: ${item.firstElementChild.textContent}`);
-  console.log(
-    `Количество элементов: ${item.firstElementChild.nextElementSibling.children.length}`,
-  );
+  console.log(`Количество элементов: ${item.lastElementChild.children.length}`);
 }
