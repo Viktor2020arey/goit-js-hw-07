@@ -10,6 +10,7 @@ ul {
 
 #gallery {
   display: flex;
+  align-items: center;
 }
 
 img {
