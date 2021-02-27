@@ -18,6 +18,8 @@ const images = [
 
 const galleryEl = document.querySelector('#gallery');
 
+galleryEl.classList.add('gallery');
+
 const imageEl = images.map(
   image => `<li><img src='${image.url}' alt='${image.alt}'/></li>`,
 );
